@@ -31,15 +31,43 @@
       </fieldset>
 
       <fieldset>
-        <input type="radio" name="job" value="account executive">Account Executive>
+        <input type="radio" name="job" value="account executive">Account Executive
         <br>
-         <input type="radio" name="job" value="business development">Business Development>
+         <input type="radio" name="job" value="business development">Business Development
         <br>
-        <input type="radio" name="job" value="inside sales">Inside Sales>
+        <input type="radio" name="job" value="inside sales">Inside Sales
         <br>
-         <input type="radio" name="job" value="sales manager">Sales Manager>
+         <input type="radio" name="job" value="sales manager">Sales Manager
         <br>
-         <input type="radio" name="job" value="VP Sales">VP Sales>
+         <input type="radio" name="job" value="VP Sales">VP Sales
+      </fieldset>
+
+      <fielset>
+        <label for="position">Type of position:</label>
+        <select name="position" id="position">
+          <option value="account executive">Account Executive</option>
+          <option value="business development">Business Development</option>
+          <option value="inside sales">Inside Sales</option>
+          <option value="sales manager">Sales Manager</option>
+          <option value="VP Sales">VP Sales</option>
+      </fielset>
+
+      <fieldset>
+        <label>Willingness to Relocate:</label>
+        <br>
+        <input type="radio" id="relocateYes" name="relocate" value="yes" required>
+        <label for="relocateYes">Yes</label>
+        <br>
+        <input type="radio" id="relocateNo" name="relocate" value="no">
+        <label for="relocateNo">No</label>
+        <br>
+        <input type="radio" id="relocateMaybe" name="relocate" value="maybe">
+        <label for="relocateMaybe">Maybe</label>
+      </fieldset>
+
+      <fieldset>
+         <button type="submit">Submit</button>
+         <button type="reset">Reset</button>
       </fieldset>
     </form>
   </body>
